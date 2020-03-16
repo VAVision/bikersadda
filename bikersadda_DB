@@ -1,0 +1,64 @@
+USE [bikersadda]
+GO
+
+/****** Object:  Table [dbo].[userdetail]    Script Date: 16-03-2020 12:39:03 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[userdetail](
+	[user_id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [varchar](500) NOT NULL,
+	[email] [varchar](500) NOT NULL,
+	[password] [varchar](500) NOT NULL,
+	[contact] [varchar](500) NOT NULL,
+	[address] [varchar](500) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+USE [bikersadda]
+GO
+
+/****** Object:  Table [dbo].[bike_details]    Script Date: 16-03-2020 12:40:19 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[bike_details](
+	[bike_id] [int] NOT NULL,
+	[bike_name] [varchar](50) NULL,
+	[max_power] [varchar](50) NULL,
+	[colours] [varchar](500) NULL,
+	[displacement] [varchar](50) NULL,
+	[kerb_weight] [varchar](50) NULL,
+	[image] [varchar](50) NULL,
+	[fuel_type] [varchar](50) NULL,
+	[no_of_gears] [varchar](50) NULL,
+	[about] [varchar](500) NULL,
+	[image1] [varchar](50) NULL,
+	[image2] [varchar](50) NULL,
+ CONSTRAINT [PK_bike_details] PRIMARY KEY CLUSTERED 
+(
+	[bike_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
