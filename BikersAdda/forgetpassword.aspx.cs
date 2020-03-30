@@ -26,7 +26,7 @@ public partial class forgetpassword : System.Web.UI.Page
             client.Timeout = 10000;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("viveknadar97@gmail.com", "vivek981924");
+            client.Credentials = new NetworkCredential("viveknadar97@gmail.com", "password");
             MailMessage msg = new MailMessage();
             msg.To.Add(email_id);
             msg.From = new MailAddress("viveknadar97@gmail.com");
